@@ -41,33 +41,25 @@ Page {
 
     Container {
         Container {
-            //! [1]
-            ListView {
-                dataModel: _btController.remoteDeviceInfo.model
+            layout: StackLayout {
+                orientation: LayoutOrientation.TopToBottom
 
-                listItemComponents: [
-                    ListItemComponent {
-                        type: "listItem"
-                        StandardListItem {
-                            title: ListItemData.uuid
-                            description: ListItemData.address
-                        }
-                    }
-                ]
-
-                function itemType(data, indexPath) {
-                    if (indexPath.length == 1) {
-                        // If the index path contains a single integer, the item
-                        // is a "header" type item
-                        return "header";
-                    } else {
-                        // If the index path contains more than one integer, the
-                        // item is a "listItem" type item
-                        return "listItem";
-                    }
+            }
+            horizontalAlignment: HorizontalAlignment.Center
+            topPadding: 50.0
+            Button {
+                text: qsTr("Toggle mode")
+                onClicked: {
+                    navigationPane.push(togglePage.createObject())
                 }
             }
-            //! [1]
+            Button {
+                text: qsTr("Slider mode")
+                topMargin: 50.0
+                onClicked: {
+                    navigationPane.push(slidePage.createObject())
+                }
+            }
         }
 
         //! [2]
@@ -78,6 +70,14 @@ Page {
             ComponentDefinition {
                 id: chatPage
                 source: "SPPChat.qml"
+            },
+            ComponentDefinition {
+                id: togglePage
+                source: "toggle.qml"
+            },
+            ComponentDefinition {
+                id: slidePage
+                source: "slider.qml"
             }
         ]
         //! [2]
