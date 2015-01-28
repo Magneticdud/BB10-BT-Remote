@@ -50,6 +50,7 @@ Page {
             Button {
                 text: qsTr("Toggle mode")
                 onClicked: {
+                    _btController.chatManager.connectToSPPService();
                     navigationPane.push(togglePage.createObject())
                 }
             }

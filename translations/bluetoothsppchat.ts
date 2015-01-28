@@ -159,6 +159,16 @@
         <source>Connect SPP</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../assets/RemoteDevice.qml" line="51"/>
+        <source>Toggle mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/RemoteDevice.qml" line="58"/>
+        <source>Slider mode</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>RemoteDeviceInfo</name>
@@ -419,6 +429,14 @@
     <message>
         <location filename="../assets/main.qml" line="58"/>
         <source>SPP Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>toggle</name>
+    <message>
+        <location filename="../assets/toggle.qml" line="19"/>
+        <source>Toggle</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
