@@ -1,5 +1,5 @@
 1
-16
+18
 images/broadcasts.png
 images/device_discovery.png
 images/discoverable_off.png
@@ -15,4 +15,6 @@ LocalDeviceInfoSheet.qml
 main.qml
 RemoteDevice.qml
 RemoteDeviceInfoSheet.qml
+slider.qml
 SPPChat.qml
+toggle.qml
