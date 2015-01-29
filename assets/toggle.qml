@@ -20,7 +20,7 @@ Page {
             horizontalAlignment: HorizontalAlignment.Center
             verticalAlignment: VerticalAlignment.Center
             onClicked: {
-                _btController.chatManager.sendSPPMessage(0x79);
+                _btController.chatManager.sendSPPMessage(2);
             }
         }
 
