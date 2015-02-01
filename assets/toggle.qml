@@ -19,10 +19,37 @@ Page {
             text: qsTr("Toggle")
             horizontalAlignment: HorizontalAlignment.Center
             verticalAlignment: VerticalAlignment.Center
+            property bool toggle : false
             onClicked: {
-                var chr = String.fromCharCode(255);
-                _btController.chatManager.sendSPPMessage(chr);
+                var acceso = String.fromCharCode(255);
+                var spento = String.fromCharCode(0);
+                if (!togglebutton.toggle){
+                    _btController.chatManager.sendSPPMessage(acceso);
+                    togglebutton.toggle=true;
+                }
+                else {
+                    _btController.chatManager.sendSPPMessage(spento);
+                    togglebutton.toggle=false;
+                }
             }
+        }
+        ImageView {
+            id: lighton
+            imageSource: "asset:///images/LightON.png"
+            horizontalAlignment: HorizontalAlignment.Center
+            topMargin: 100.0
+            visible: togglebutton.toggle
+            accessibility.name: qsTr("Light On")
+
+        }
+        ImageView {
+            id: lightoff
+            imageSource: "asset:///images/LightOFF.png"
+            horizontalAlignment: HorizontalAlignment.Center
+            topMargin: 100.0
+            visible: !togglebutton.toggle
+            accessibility.name: qsTr("Light Off")
+        
         }
 
     }
