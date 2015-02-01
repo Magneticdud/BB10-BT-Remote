@@ -33,7 +33,7 @@ Page {
             toValue: 255.0
             property int percValue : (slider.immediateValue/slider.toValue*100)
             property int intValue : slider.immediateValue
-            onValueChanged: {
+            onImmediateValueChanged: {
                 var chr = String.fromCharCode(slider.intValue); 
                 _btController.chatManager.sendSPPMessage(chr);
             }
