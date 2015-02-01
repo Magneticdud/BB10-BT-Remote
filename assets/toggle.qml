@@ -20,11 +20,7 @@ Page {
             horizontalAlignment: HorizontalAlignment.Center
             verticalAlignment: VerticalAlignment.Center
             onClicked: {
-<<<<<<< .merge_file_fmyu8K
-                _btController.chatManager.sendIntSPP(79);
-=======
                 _btController.chatManager.sendSPPMessage(2);
->>>>>>> .merge_file_KyfuDW
             }
         }
 

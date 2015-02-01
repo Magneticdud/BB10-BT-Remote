@@ -190,15 +190,6 @@ void ChatManager::sendSPPMessage(const QString &msg)
 }
 //! [9]
 
-void ChatManager::sendIntSPP(const QString &msg)
-{
-    // The send button in the SPPChat screen is clicked. The msg parameter is the message the user intends to send over SPP.
-    if (m_sppDataThread.active()) {
-        write(m_sppDataThread.getFD(), msg.data(), msg.size());
-        std::cout << "Sent: " << msg.data() << std::endl;
-    }
-}
-
 //! [10]
 void ChatManager::closeSPPConnection()
 {

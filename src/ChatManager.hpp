@@ -112,9 +112,6 @@ public Q_SLOTS:
     // Sends a message to the remote peer
     void sendSPPMessage(const QString &msg);
 
-    // Sends a raw message
-    void sendIntSPP(const QString &msg);
-
     // Closes the SPP session (in client and server mode)
     void closeSPPConnection();
 
