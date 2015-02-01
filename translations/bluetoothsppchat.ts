@@ -433,6 +433,14 @@
     </message>
 </context>
 <context>
+    <name>slider</name>
+    <message>
+        <location filename="../assets/slider.qml" line="19"/>
+        <source>Value:</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>toggle</name>
     <message>
         <location filename="../assets/toggle.qml" line="19"/>

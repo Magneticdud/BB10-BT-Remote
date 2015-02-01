@@ -58,6 +58,7 @@ Page {
                 text: qsTr("Slider mode")
                 topMargin: 50.0
                 onClicked: {
+                    _btController.chatManager.connectToSPPService();
                     navigationPane.push(slidePage.createObject())
                 }
             }
