@@ -439,6 +439,11 @@
         <source>Value:</source>
         <translation type="unfinished">Valore:</translation>
     </message>
+    <message>
+        <location filename="../assets/slider.qml" line="40"/>
+        <source>Slider</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>toggle</name>

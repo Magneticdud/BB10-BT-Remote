@@ -37,6 +37,7 @@ Page {
                 var chr = String.fromCharCode(slider.intValue); 
                 _btController.chatManager.sendSPPMessage(chr);
             }
+            accessibility.name: qsTr("Slider")
 
         }
 
