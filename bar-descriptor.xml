@@ -26,11 +26,11 @@
 
     <!-- A universally unique application identifier. Must be unique across all BlackBerry Tablet OS applications.
          Using a reverse DNS-style name as the id is recommended. (Eg. com.example.ExampleApplication.) Required. -->
-    <id>com.example.bb10samples.bluetooth.bluetoothsppchat</id>
+    <id>net.dandandin.btremote</id>
 
     <!-- The name that is displayed in the BlackBerry Tablet OS application installer.
          May have multiple values for each language. See samples or xsd schema file. Optional. -->
-    <name>bluetoothsppchat</name>
+    <name>BT Remote</name>
 
     <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade.
          Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
@@ -51,8 +51,8 @@
     <!-- <copyright></copyright> -->
 
     <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
-    <author>RIM</author>
-    <description>Chat over Bluetooth SPP</description>
+    <author>dandandin.it</author>
+    <description>Interface with an Arduino via Bluetooth</description>
 
     <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
     <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
@@ -63,7 +63,7 @@
     </initialWindow>
 
     <!--  The category where the application appears. Either core.games or core.media. -->
-    <category>core.games</category>
+    <authorId>gYAAgBMH4VEDz8YB_qobmRr1ZQk</authorId>
     <configuration name="Device-Profile">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="arm-p/o.le-v7-g/bluetoothsppchat" entry="true" type="Qnx/Elf">bluetoothsppchat</asset>
