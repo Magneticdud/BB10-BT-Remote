@@ -16,7 +16,7 @@ Page {
         topPadding: 100.0
         Label {
             id: labelslide
-            text: qsTr("Value:")+" "+slider.intValue;
+            text: qsTr("Value:")+" "+(slider.percValue)+"%";
             horizontalAlignment: HorizontalAlignment.Center
             topMargin: 100.0
             textFormat: TextFormat.Plain
@@ -32,7 +32,8 @@ Page {
             topMargin: 50.0
             fromValue: 0.0
             value: 128.0
-            toValue: 254.0
+            toValue: 255.0
+            property int percValue : (slider.immediateValue/slider.toValue*100)
             property int intValue : slider.immediateValue
             onValueChanged: {
                 var chr = String.fromCharCode(slider.intValue); 
