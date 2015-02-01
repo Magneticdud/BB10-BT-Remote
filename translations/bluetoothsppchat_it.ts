@@ -399,7 +399,7 @@
     <message>
         <location filename="../assets/main.qml" line="28"/>
         <source>Search Devices</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerca dispositivi</translation>
     </message>
     <message>
         <location filename="../assets/main.qml" line="36"/>
@@ -424,12 +424,12 @@
     <message>
         <location filename="../assets/main.qml" line="51"/>
         <source>Local Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Dispositivo locale</translation>
     </message>
     <message>
         <location filename="../assets/main.qml" line="58"/>
         <source>SPP Server</source>
-        <translation type="unfinished"></translation>
+        <translation>Server SPP</translation>
     </message>
 </context>
 <context>
@@ -437,12 +437,12 @@
     <message>
         <location filename="../assets/slider.qml" line="19"/>
         <source>Value:</source>
-        <translation type="unfinished">Valore:</translation>
+        <translation>Valore:</translation>
     </message>
     <message>
         <location filename="../assets/slider.qml" line="40"/>
         <source>Slider</source>
-        <translation type="unfinished"></translation>
+        <translation>Slider</translation>
     </message>
 </context>
 <context>
