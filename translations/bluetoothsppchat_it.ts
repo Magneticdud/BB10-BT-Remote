@@ -443,19 +443,9 @@
 <context>
     <name>toggle</name>
     <message>
-        <location filename="../assets/toggle.qml" line="19"/>
+        <location filename="../assets/toggle.qml" line="37"/>
         <source>Toggle</source>
         <translation>Azione</translation>
-    </message>
-    <message>
-        <location filename="../assets/toggle.qml" line="42"/>
-        <source>Light On</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../assets/toggle.qml" line="51"/>
-        <source>Light Off</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

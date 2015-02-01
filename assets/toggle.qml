@@ -14,13 +14,15 @@ Page {
     
     Container {
         topPadding: 100.0
-        Button {
+        ImageToggleButton {
             id: togglebutton
-            text: qsTr("Toggle")
-            horizontalAlignment: HorizontalAlignment.Center
-            verticalAlignment: VerticalAlignment.Center
             property bool toggle : false
-            onClicked: {
+            imageSourceChecked: "asset:///images/LightON.png"
+            imageSourceDefault: "asset:///images/LightOFF.png"
+            horizontalAlignment: HorizontalAlignment.Center
+            topMargin: 100.0
+            checked: togglebutton.toggle
+            onCheckedChanged: {
                 var acceso = String.fromCharCode(255);
                 var spento = String.fromCharCode(0);
                 if (!togglebutton.toggle){
@@ -32,25 +34,7 @@ Page {
                     togglebutton.toggle=false;
                 }
             }
+            accessibility.name: qsTr("Toggle")
         }
-        ImageView {
-            id: lighton
-            imageSource: "asset:///images/LightON.png"
-            horizontalAlignment: HorizontalAlignment.Center
-            topMargin: 100.0
-            visible: togglebutton.toggle
-            accessibility.name: qsTr("Light On")
-
-        }
-        ImageView {
-            id: lightoff
-            imageSource: "asset:///images/LightOFF.png"
-            horizontalAlignment: HorizontalAlignment.Center
-            topMargin: 100.0
-            visible: !togglebutton.toggle
-            accessibility.name: qsTr("Light Off")
-        
-        }
-
     }
 }
