@@ -182,8 +182,8 @@ void ChatManager::sendSPPMessage(const QString &msg)
     // The send button in the SPPChat screen is clicked. The msg parameter is the message the user intends to send over SPP.
     if (m_sppDataThread.active()) {
         write(m_sppDataThread.getFD(), msg.toAscii().data(), msg.size());
-
         updateChatWindow("  We: " + msg);
+        std::cout << "Sent: " << msg.data() << std::endl;
     } else {
         updateChatWindow("ERROR - send with no file descriptor.");
     }
