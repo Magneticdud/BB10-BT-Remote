@@ -76,8 +76,6 @@ NavigationPane {
                         type: "listItem"
                         StandardListItem {
                             title: ListItemData.deviceName
-                            description: ListItemData.deviceAddress
-                            status: ListItemData.deviceClass
                         }
                     }
                 ]

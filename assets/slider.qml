@@ -27,11 +27,9 @@ Page {
         Slider {
             id: slider
             horizontalAlignment: HorizontalAlignment.Center
-            leftMargin: 50.0
-            rightMargin: 50.0
             topMargin: 50.0
             fromValue: 0.0
-            value: 128.0
+            value: 0.0
             toValue: 255.0
             property int percValue : (slider.immediateValue/slider.toValue*100)
             property int intValue : slider.immediateValue
