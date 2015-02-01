@@ -6,7 +6,7 @@
     <message>
         <location filename="../src/DeviceListing.cpp" line="54"/>
         <source>Bluetooth Devices  Paired</source>
-        <translation type="unfinished"></translation>
+        <translation>Bluetooth Devices Paired on this device</translation>
     </message>
     <message>
         <location filename="../src/DeviceListing.cpp" line="67"/>

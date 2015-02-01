@@ -30,7 +30,10 @@
 
     <!-- The name that is displayed in the BlackBerry Tablet OS application installer.
          May have multiple values for each language. See samples or xsd schema file. Optional. -->
-    <name>BT Remote</name>
+    <name>
+       BT Remote
+       <text xml:lang="it">BT Remote</text>
+    </name>
 
     <!-- A string value of the format <0-999>.<0-999>.<0-999> that represents application version which can be used to check for application upgrade.
          Values can also be 1-part or 2-part. It is not necessary to have a 3-part value.
@@ -53,7 +56,10 @@
 
     <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
     <author>dandandin.it</author>
-    <description>Interface with an Arduino via Bluetooth</description>
+    <description>
+       Interface with an Arduino via Bluetooth
+       <text xml:lang="it">Un app per gestire Arduino via Bluetooth</text>
+    </description>
 
     <!--  Unique author ID assigned by signing authority. Required if using debug tokens. -->
     <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
